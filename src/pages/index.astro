@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Hero from '../components/Hero.astro';
+import HeaderLayout from '../layouts/HeaderLayout.astro';
+import HeroTitle from '../components/HeroTitle.astro';
+import MaxWidth from '../components/MaxWidth.astro';
+import Video from '../components/Video.astro';
+import Info from '../components/Info.astro';
+import MnResponsiveLayout from '../components/MnResponsiveLayout.astro';
+---
+
+<Layout title="Abogados de motocicletas">
+	
+	<HeaderLayout />
+
+	<Hero />
+
+	<MaxWidth>
+		<HeroTitle />
+
+		<Video />
+	</MaxWidth>
+	
+	<Info />
+	
+	<MnResponsiveLayout />
+</Layout>

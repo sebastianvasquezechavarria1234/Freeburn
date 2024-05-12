@@ -1,0 +1,87 @@
+---
+import MnResponsiveItemsLayout from "./MnResponsiveItemsLayout.astro"
+---
+
+<section class="MnResponsive fixed w-[60%] h-screen bg-black z-50 top-0 left-[-60%] p-[20px] md:p-[40px] trnasition-all duration-500 ease-in-out bg-[url(/info-bg.avif)] bg-center bg-cover">
+    <span>
+        <svg class="iconX mb-[30px] cursor-pointer" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M18 6l-12 12" />
+            <path d="M6 6l12 12" />
+          </svg>
+    </span>
+    <ul>
+        <li>
+            <MnResponsiveItemsLayout
+            title="hogar"
+            href="/"
+            />
+        </li>
+        <li>
+            <MnResponsiveItemsLayout
+            title="sobre nosotros"
+            href="/"
+            />
+        </li>
+        <li>
+            <MnResponsiveItemsLayout
+            title="lesiones personales"
+            href="/"
+            />
+        </li>
+        <li>
+            <MnResponsiveItemsLayout
+            title="testamentos para moteros"
+            href="/"
+            />
+        </li>
+        <li>
+            <MnResponsiveItemsLayout
+            title="resultados y reseñas"
+            href="/"
+            />
+        </li>
+        <li>
+            <MnResponsiveItemsLayout
+            title="eventos de la comunidad"
+            href="/"
+            />
+        </li>
+        <li>
+            <MnResponsiveItemsLayout
+            title="recursos"
+            href="/"
+            />
+        </li>
+        <li>
+            <MnResponsiveItemsLayout
+            title="contactenos"
+            href="/"
+            />
+        </li>
+        
+    </ul>
+
+</section>
+
+<style>
+    section.mnResponsiveActive{
+        left: 0px;
+    }
+</style>
+
+<script>
+
+    var iconMn = document.querySelector(".iconMn");
+    var iconX = document.querySelector(".iconX");
+    var MnResponsive = document.querySelector(".MnResponsive");
+
+    iconMn.addEventListener("click", () => {
+        MnResponsive.classList.add("mnResponsiveActive")
+    })
+
+    iconX.addEventListener("click", () => {
+        MnResponsive.classList.remove("mnResponsiveActive")
+    })
+    
+</script>

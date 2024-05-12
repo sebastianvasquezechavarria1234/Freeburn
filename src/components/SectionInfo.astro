@@ -1,0 +1,26 @@
+---
+import InfoTt from './InfoTt.astro'
+import InfoPicture from "./InfoPicture.astro"
+
+const { style, imgPicture, title, subTitleYellow, p1, p2, subTitle, p3, titleBtn, imgBtn, } = Astro.props
+---
+
+<section class=`
+${style}
+block md:flex gap-[30px]
+`>
+    <InfoPicture 
+    img={imgPicture}
+    />
+       
+    <InfoTt 
+        title={title}
+        subTitleYellow={subTitleYellow}
+        p1={p1}
+        subTitle={subTitle}
+        p2={p2}
+        p3={p3}
+        titleBtn={titleBtn}
+        imgBtn={imgBtn}
+        />
+</section>

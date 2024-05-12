@@ -1,0 +1,23 @@
+---
+import BtnDefault from "./BtnDefault.astro"
+import InfoPflex from "./InfoPflex.astro"
+
+const { style, title, subTitleYellow, p1, subTitle, p2, p3, titleBtn, imgBtn} = Astro.props
+---
+
+<div class=`
+${style}
+w- mt-[30px] full md:mt-[0px] md:w-[50%]
+`>
+    <h2 class="mb-[20px]">{title}</h2>
+    <p class="text-[19px] sm:text-[25px] text-Yellow leading-[25px] mb-[20px] italic">{subTitleYellow}</p>
+    <p class="mb-[20px]">{p1}</p>
+    <h4 class="mb-[20px] text-[19px] sm:text-[23px] italic leading-[24px]">{subTitle}</h4>
+    <p class="mb-[20px]">{p2}</p>
+    <p class="mb-[30px]">{p3}</p>
+    <BtnDefault 
+    title={titleBtn}
+    style="opacity-90"
+    img={imgBtn}
+    />
+</div>
